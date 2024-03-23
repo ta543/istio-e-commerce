@@ -1,4 +1,4 @@
-# 🌐 Advanced Istio E-Commerce Platform 🛒
+# 🌐 Istio E-Commerce Platform 🛒
 
 ## 📋 Overview
 
