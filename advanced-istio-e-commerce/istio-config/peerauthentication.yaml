@@ -1,0 +1,7 @@
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: ecommerce-mtls-peerauthentication
+spec:
+  mtls:
+    mode: STRICT

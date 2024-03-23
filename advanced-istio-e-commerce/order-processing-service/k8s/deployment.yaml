@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-processing-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-processing-service
+  template:
+    metadata:
+      labels:
+        app: order-processing-service
+    spec:
+      containers:
+      - name: order-processing-service
+        image: order-processing-service:latest
+        ports:
+        - containerPort: 8080

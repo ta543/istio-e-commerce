@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-accounts-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-accounts-service
+  template:
+    metadata:
+      labels:
+        app: user-accounts-service
+    spec:
+      containers:
+      - name: user-accounts-service
+        image: user-accounts-service:latest
+        ports:
+        - containerPort: 8080
